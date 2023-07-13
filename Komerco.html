@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Komerco Production Chains</title>
+<link rel="stylesheet" href="./Komerco_files/tech-tree.css">
+<script src="./Komerco_files/jquery.min.js"></script>
+<script src="./Komerco_files/tech-tree.js" charset="UTF-8"></script>
+</head>
+<body>
+<h1>Komerco Production Chains</h1>
+<p>Click any industry to highlight the full production chain.</p>
+
+<!--Cocoa-->
+<div id="ind" class="tech L1" style="left:20px;top:202px" data-prereqs="" data-title="Ind"><img class="pic" src="./Komerco_files/ind.png"></div>
+<div id="ig_ind" class="path" style="left:-24px;top:321px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="ig" class="tech L3" style="left:20px;top:370px" data-prereqs="ind" data-title="Ig"><img class="pic" src="./Komerco_files/ig.png"></div>
+
+<!--Cotton-->
+<div id="cotton" class="tech L1" style="left:140px;top:202px" data-prereqs="" data-title="Cotton"><img class="pic" src="./Komerco_files/cotton.png"></div>
+<div id="yarn_cotton" class="path" style="left:96px;top:321px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="yarn_coal" class="path" style="left:156px;top:321px;width:268px;transform:rotate(2.7rad);background-color:#ffa500"></div>
+<div id="yarn_water" class="path" style="left:191px;top:321px;width:588px;transform:rotate(2.977rad);background-color:#ffa500"></div>
+<div id="yarn" class="tech L2" style="left:140px;top:370px;background-color:#ffa500" data-prereqs="cotton,coal,water" data-title="Yarn"><img class="pic" src="./Komerco_files/yarn.png"></div>
+<div id="fabric_yarn" class="path" style="left:96px;top:489px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="fabric_coal" class="path" style="left:106px;top:381px;width:428px;transform:rotate(2.236rad);background-color:#ffa500"></div>
+<div id="fabric_water" class="path" style="left:126px;top:411px;width:688px;transform:rotate(2.703rad);background-color:#ffa500"></div>
+<div id="fabric" class="tech L3" style="left:140px;top:538px;background-color:#ffa500" data-prereqs="yarn,water,coal" data-title="Fabric"><img class="pic" src="./Komerco_files/fabric.png"></div>
+
+<!--Coal-->
+<div id="coal" class="tech L1" style="left:380px;top:202px" data-prereqs="" data-title="Coal"><img class="pic" src="./Komerco_files/coal.png"></div>
+<div id="electricity_coal" class="path" style="left:236px;top:401px;width:368px;transform:rotate(1.571rad);background-color:#ffa500"></div>
+<div id="electricity_water" class="path" style="left:361px;top:401px;width:488px;transform:rotate(2.5rad)"></div>
+<div id="electricity_pp" class="path" style="left:401px;top:486px;width:500px;transform:rotate(2.92rad);background-color:#00ff00;"></div>
+<div id="electricity" class="tech L3" style="left:380px;top:538px" data-prereqs="coal,pp,water" data-title="Electricity"><img class="pic" src="./Komerco_files/electricity.png"></div>
+
+<!--Copper-->
+<div id="copper" class="tech L1" style="left:260px;top:202px" data-prereqs="" data-title="Copper"><img class="pic" src="./Komerco_files/copper.png"></div>
+<div id="cp_copper" class="path" style="left:216px;top:321px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="cp_coal" class="path" style="left:276px;top:321px;width:168px;transform:rotate(2.411rad);background-color:#ffa500"></div>
+<div id="cp" class="tech L2" style="left:260px;top:370px;background-color:#ffa500" data-prereqs="copper,coal" data-title="Cp"><img class="pic" src="./Komerco_files/cp.png"></div>
+
+<!--Sand-->
+<div id="sand" class="tech L1" style="left:500px;top:202px" data-prereqs="" data-title="Sand"><img class="pic" src="./Komerco_files/sand.png"></div>
+<div id="silicon_sand" class="path" style="left:456px;top:321px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="silicon_coal" class="path" style="left:396px;top:321px;width:168px;transform:rotate(0.730rad)"></div>
+<div id="silicon" class="tech L2" style="left:500px;top:370px" data-prereqs="sand,coal" data-title="Silicon"><img class="pic" src="./Komerco_files/silicon.png"></div>
+<div id="ic_acid" class="path" style="left:526px;top:821px;width:168px;transform:rotate(2.411rad)"></div>
+<div id="ic_silicon" class="path" style="left:316px;top:649px;width:456px;transform:rotate(1.571rad)"></div>
+<div id="ic_cp" class="path" style="left:176px;top:656px;width:488px;transform:rotate(1.101rad)"></div>
+<div id="ic" class="tech L5" style="left:500px;top:874px" data-prereqs="acid,silicon,cp" data-title="Ic"><img class="pic" src="./Komerco_files/ic.png"></div>
+<div id="electronics_cp" class="path" style="left:76px;top:741px;width:658px;transform:rotate(1.221rad)"></div>
+<div id="electronics_ic" class="path" style="left:456px;top:982px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="electronics_plastic" class="path" style="left:456px;top:821px;width:568px;transform:rotate(2.231rad)"></div>
+<div id="electronics" class="tech L5" style="left:500px;top:1042px" data-prereqs="ic,cp,plastic" data-title="Electronics"><img class="pic" src="./Komerco_files/electronics.png"></div>
+
+
+<!--Water-->
+<div id="water" class="tech L1" style="left:740px;top:202px" data-prereqs="" data-title="Water"><img class="pic" src="./Komerco_files/water.png"></div>
+<div id="sulfur_water" class="path" style="left:596px;top:401px;width:368px;transform:rotate(1.571rad)"></div>
+<div id="sulfur_pp" class="path" style="left:756px;top:489px;width:168px;transform:rotate(2.411rad)"></div>
+<div id="sulfur" class="tech L4" style="left:740px;top:538px" data-prereqs="water,pp" data-title="Sulfur"><img class="pic" src="./Komerco_files/sulfur.png"></div>
+
+<!--Iron-->
+<div id="iron" class="tech L1" style="left:620px;top:202px" data-prereqs="" data-title="Iron"><img class="pic" src="./Komerco_files/iron.png"></div>
+<div id="si_iron" class="path" style="left:576px;top:321px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="si_coal" class="path" style="left:416px;top:321px;width:268px;transform:rotate(0.430rad);background-color:#ffa500"></div>
+<div id="si" class="tech L2" style="left:620px;top:370px;background-color:#ffa500" data-prereqs="iron,coal" data-title="Si"><img class="pic" src="./Komerco_files/si.png"></div>
+<div id="acid_sulfur" class="path" style="left:656px;top:651px;width:168px;transform:rotate(2.356rad)"></div>
+<div id="acid_si" class="path" style="left:526px;top:571px;width:268px;transform:rotate(1.571rad)"></div>
+<div id="acid_water" class="path" style="left:484px;top:496px;width:468px;transform:rotate(1.830rad)"></div>
+<div id="acid" class="tech L4" style="left:620px;top:706px" data-prereqs="water,si,sulfur" data-title="Acid"><img class="pic" src="./Komerco_files/acid.png"></div>
+
+<!--Oil-->
+<div id="oil" class="tech L1" style="left:860px;top:202px" data-prereqs="" data-title="Oil"><img class="pic" src="./Komerco_files/oil.png"></div>
+<div id="pp_oil" class="path" style="left:814px;top:321px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="pp" class="tech L2" style="left:860px;top:370px" data-prereqs="oil" data-title="Pp"><img class="pic" src="./Komerco_files/pp.png"></div>
+<div id="plastic_pp" class="path" style="left:814px;top:489px;width:168px;transform:rotate(1.571rad)"></div>
+<div id="plastic_coal" class="path" style="left:386px;top:401px;width:538px;transform:rotate(0.531rad)"></div>
+<div id="plastic" class="tech L4" style="left:860px;top:538px" data-prereqs="pp,coal" data-title="Plastic"><img class="pic" src="./Komerco_files/plastic.png"></div>
+
+<!--Sap-->
+<div id="sap" class="tech L1" style="left:980px;top:202px" data-prereqs="" data-title="Sap"><img class="pic" src="./Komerco_files/sap.png"></div>
+<div id="rubber_sap" class="path" style="left:776px;top:461px;width:488px;transform:rotate(1.571rad);background-color:#ffa500"></div>
+<div id="rubber_sulfur" class="path" style="left:776px;top:661px;width:268px;transform:rotate(0.430rad)"></div>
+<div id="rubber_pp" class="path" style="left:776px;top:581px;width:388px;transform:rotate(1.23rad);background-color:#00ff00"></div>
+<div id="rubber" class="tech L4" style="left:980px;top:706px" data-prereqs="sap,pp,sulfur" data-title="Rubber"><img class="pic" src="./Komerco_files/rubber.png"></div>
+
+<!--CE-->
+<div id="ce_si" class="path" style="left:686px;top:491px;width:468px;transform:rotate(0.215rad)"></div>
+<div id="ce_pp" class="path" style="left:906px;top:491px;width:268px;transform:rotate(0.430rad)"></div>
+<div id="ce" class="tech L5" style="left:1100px;top:538px" data-prereqs="pp,si" data-title="Ce"><img class="pic" src="./Komerco_files/engine.png"></div>
+<div id="car_ce" class="path" style="left:996px;top:751px;width:288px;transform:rotate(1.571rad)"></div>
+<div id="car_si" class="path" style="left:561px;top:643px;width:668px;transform:rotate(0.760rad)"></div>
+<div id="car_rubber" class="path" style="left:986px;top:821px;width:168px;transform:rotate(0.730rad)"></div>
+<div id="car" class="tech L5" style="left:1100px;top:874px" data-prereqs="ce,rubber,si" data-title="Car"><img class="pic" src="./Komerco_files/automobile.png"></div>
+
+
+</body></html>

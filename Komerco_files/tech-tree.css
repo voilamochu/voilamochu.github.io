@@ -1,0 +1,33 @@
+@charset "UTF-8";
+html { margin:0; padding:0 }
+body { min-width:1660px; min-height:4100px; margin:0; padding:0; background-color:#000; font-family: Arial, Helvetica, sans-serif; color:#fff; }
+a { color:#fff; }
+.tech { position:absolute; z-index:1; width:81px; border-radius:5px; color:#aaa; font-size:14px; font-weight:bold; background: #508240; cursor:pointer; text-align:center; line-height:1px; padding-bottom:1.5px; }
+.pic { width:64px; height:64px; padding:3px; }
+.items { text-align:left; margin-left: 1.5px }
+.path { position:absolute; background-color:#aaa; height:2px; }
+.dark { opacity: 0.0 }
+.blurred { opacity:0.3 }
+.blurred2 { opacity:0.0 }
+.path.selected2 { background-color:#fff; z-index:2; }
+.item, .bonus, .hoveritem { margin:1.5px; width:32px; height:32px; padding:2px; background-clip:content-box; background-origin: content-box; background-size: auto 100%; background-repeat:no-repeat; display:inline-block; border-radius: 4px; box-shadow: inset 0 1px 0 #fff4, 0 1px 3px #0004; }
+.selected { box-shadow: 0 0 10px 5px #fff; z-index:4; }
+.selected2 { z-index:3; opacity:1 !important; }
+.bonus { background-image:url(bonus-icon.png); }
+.item.selected { background-color:white; padding:0; border:2px solid white; border-radius:2px }
+.hoveritem { vertical-align:middle; text-align:right; font-size:15px; font-weight:bold; line-height:52px; text-shadow: -1px -1px 0px #000, 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000; margin-right:4px; }
+#tooltip { z-index:5; position:absolute; display:none; white-space:nowrap; background-color:#404040f4; padding:8px; font-size:16px; }
+#tooltip2 { z-index:5; position:absolute; display:none; width:250px; }
+#tooltip2 > div { background-color:#404040f4; padding:8px; font-size:16px; display:inline-block; }
+.tiplist, .tip5 { height:41px; line-height:41px; }
+.tiptitle { padding-bottom:5px; font-weight:bold; color:#000; background-color: #ebd2ac; margin:-8px -8px 8px -8px; padding:6px 8px; box-shadow: inset 0 0 3px; }
+.tipheading { font-weight:bold; color: #ffe6c0; }
+.L1 { background: #944848 }
+.L2 { }
+.L3 { background: #465461 }
+.L4 { background: #45828c }
+.L5 { background: #6e4894 }
+.L6 { background: #8c803f }
+.L7 { background: #8c8c8c }
+.L34 { background: repeating-linear-gradient(135deg, #465461, #465461 27px, #45828c 27px, #45828c 54px);}
+.L56 { background: repeating-linear-gradient(135deg, #6e4894, #6e4894 27px, #8c803f 27px, #8c803f 54px);}
