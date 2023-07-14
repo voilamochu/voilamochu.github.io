@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html { margin:0; padding:0 }
-body { min-width:1660px; min-height:4100px; margin:0; padding:0; background-color:#000; font-family: Arial, Helvetica, sans-serif; color:#fff; }
+body { max-width:1660px; min-height:4100px; margin:0; padding:0; background-color:#000; font-family: Arial, Helvetica, sans-serif; color:#fff; }
 a { color:#fff; }
 .tech { position:absolute; z-index:1; width:81px; border-radius:5px; color:#aaa; font-size:14px; font-weight:bold; background: #508240; cursor:pointer; text-align:center; line-height:1px; padding-bottom:1.5px; }
 .pic { width:64px; height:64px; padding:3px; }
