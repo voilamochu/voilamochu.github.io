@@ -1,0 +1,21 @@
+@charset "UTF-8";
+html { margin:0; padding:0 }
+body { max-width:1660px; min-height:4100px; margin:0; padding:0; background-color:#000; font-family: Arial, Helvetica, sans-serif; color:#fff; }
+a { color:#fff; }
+.tech { position:absolute; z-index:1; width:81px; border-radius:5px; color:#aaa; font-size:14px; font-weight:bold; background: #508240; cursor:pointer; text-align:center; line-height:1px; padding-bottom:1.5px; }
+.pic { width:64px; height:64px; padding:3px; }
+.path { position:absolute; background-color:#aaa; height:2px; }
+.dark { opacity: 0.0 }
+.blurred { opacity:0.3 }
+.blurred2 { opacity:0.0 }
+.path.selected2 { background-color:#fff; z-index:2; }
+.selected { box-shadow: 0 0 10px 5px #fff; z-index:4; }
+.selected2 { z-index:3; opacity:1 !important; }
+.bonus { background-image:url(bonus-icon.png); }
+.L1 { background: #C9E4DE }
+.L2 { background: #c09475}
+.L3 { background: #D9CBA9 }
+.L4 { background: #7692df }
+.L5 { background: #D0A4BC }
+.L6 { background: #B9ABD8 }
+.L7 { background: #888888 }

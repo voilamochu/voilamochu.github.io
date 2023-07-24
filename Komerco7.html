@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
+<title>Komerco Production Chains</title>
+<link rel="stylesheet" href="./Komerco7_files/tech-tree.css">
+<script src="./Komerco7_files/jquery.min.js"></script>
+<script src="./Komerco7_files/tech-tree.js" charset="UTF-8"></script>
+</head>
+<body>
+<h1>Komerco Production Chains</h1>
+<p>Click any industry to highlight the full production chain.</p>
+
+<div id="iron" class="tech L1" style="left:20px;top:200px" data-prereqs="" data-title="iron"><img class="pic" src="./Komerco7_files/iron.png"></div>
+<div id="copper" class="tech L1" style="left:140px;top:200px" data-prereqs="" data-title="copper"><img class="pic" src="./Komerco7_files/copper.png"></div>
+<div id="oil" class="tech L1" style="left:260px;top:200px" data-prereqs="" data-title="oil"><img class="pic" src="./Komerco7_files/oil.png"></div>
+<div id="coal" class="tech L1" style="left:380px;top:200px" data-prereqs="" data-title="coal"><img class="pic" src="./Komerco7_files/coal.png"></div>
+<div id="water" class="tech L1" style="left:500px;top:200px" data-prereqs="" data-title="water"><img class="pic" src="./Komerco7_files/water.png"></div>
+<div id="pyrite" class="tech L1" style="left:620px;top:200px" data-prereqs="" data-title="pyrite"><img class="pic" src="./Komerco7_files/pyrite.png"></div>
+<div id="sap" class="tech L1" style="left:740px;top:200px" data-prereqs="" data-title="sap"><img class="pic" src="./Komerco7_files/sap.png"></div>
+<div id="silica" class="tech L1" style="left:860px;top:200px" data-prereqs="" data-title="silica"><img class="pic" src="./Komerco7_files/silica.png"></div>
+<div id="tungsten" class="tech L1" style="left:980px;top:200px" data-prereqs="" data-title="tungsten"><img class="pic" src="./Komerco7_files/tungsten.png"></div>
+<div id="wood" class="tech L1" style="left:1100px;top:200px" data-prereqs="" data-title="wood"><img class="pic" src="./Komerco7_files/wood.png"></div>
+<div id="cotton" class="tech L1" style="left:1220px;top:200px" data-prereqs="" data-title="cotton"><img class="pic" src="./Komerco7_files/cotton.png"></div>
+<div id="beans" class="tech L1" style="left:1340px;top:200px" data-prereqs="" data-title="beans"><img class="pic" src="./Komerco7_files/beans.png"></div>
+
+<div id="steel" class="tech L2" style="left:20px;top:360px" data-prereqs="iron,coal" data-title="steel"><img class="pic" src="./Komerco7_files/steel.png"></div>
+<div id="wire" class="tech L2" style="left:140px;top:360px" data-prereqs="copper,coal" data-title="wire"><img class="pic" src="./Komerco7_files/wire.png"></div>
+<div id="petroleum" class="tech L2" style="left:260px;top:360px" data-prereqs="oil,water" data-title="petroleum"><img class="pic" src="./Komerco7_files/petroleum.png"></div>
+<div id="electricity" class="tech L2" style="left:500px;top:360px" data-prereqs="coal,water" data-title="electricity"><img class="pic" src="./Komerco7_files/electricity.png"></div>
+<div id="sulfur" class="tech L2" style="left:620px;top:360px" data-prereqs="pyrite,coal" data-title="sulfur"><img class="pic" src="./Komerco7_files/sulfur.png"></div>
+<div id="glass" class="tech L2" style="left:860px;top:360px" data-prereqs="silica,coal,water" data-title="glass"><img class="pic" src="./Komerco7_files/glass.png"></div>
+<div id="paper" class="tech L2" style="left:1100px;top:360px" data-prereqs="wood,coal,water" data-title="paper"><img class="pic" src="./Komerco7_files/paper.png"></div>
+<div id="yarn" class="tech L2" style="left:1220px;top:360px" data-prereqs="cotton,coal,water" data-title="yarn"><img class="pic" src="./Komerco7_files/yarn.png"></div>
+<div id="coffee" class="tech L2" style="left:1340px;top:360px" data-prereqs="beans" data-title="coffee"><img class="pic" src="./Komerco7_files/coffee.png"></div>
+
+<div id="engine" class="tech L3" style="left:140px;top:520px" data-prereqs="steel,wire" data-title="engine"><img class="pic" src="./Komerco7_files/engine.png"></div>
+<div id="battery" class="tech L3" style="left:380px;top:520px" data-prereqs="water,wire,sulfur" data-title="battery"><img class="pic" src="./Komerco7_files/battery.png"></div>
+<div id="rubber" class="tech L3" style="left:620px;top:520px" data-prereqs="coal,sulfur,sap" data-title="rubber"><img class="pic" src="./Komerco7_files/rubber.png"></div>
+<div id="bulb" class="tech L3" style="left:860px;top:520px" data-prereqs="glass,coal,tungsten" data-title="bulb"><img class="pic" src="./Komerco7_files/bulb.png"></div>
+<div id="furniture" class="tech L3" style="left:1100px;top:520px" data-prereqs="steel,wood" data-title="furniture"><img class="pic" src="./Komerco7_files/furniture.png"></div>
+<div id="fabric" class="tech L3" style="left:1220px;top:520px" data-prereqs="yarn,coal,water" data-title="fabric"><img class="pic" src="./Komerco7_files/fabric.png"></div>
+
+<div id="locomotive" class="tech L4" style="left:140px;top:680px" data-prereqs="petroleum,engine,steel" data-title="locomotive"><img class="pic" src="./Komerco7_files/locomotive.png"></div>
+<div id="motor" class="tech L4" style="left:260px;top:680px" data-prereqs="engine,petroleum" data-title="motor"><img class="pic" src="./Komerco7_files/motor.png"></div>
+<div id="telecom" class="tech L4" style="left:500px;top:680px" data-prereqs="wire,battery,glass" data-title="telecom"><img class="pic" src="./Komerco7_files/telecom.png"></div>
+<div id="bicycle" class="tech L4" style="left:620px;top:680px" data-prereqs="wood,rubber,steel" data-title="bicycle"><img class="pic" src="./Komerco7_files/bicycle.png"></div>
+<div id="upholstery" class="tech L4" style="left:1100px;top:680px" data-prereqs="furniture,fabric" data-title="upholstery"><img class="pic" src="./Komerco7_files/upholstery.png"></div>
+
+<div id="automobile" class="tech L5" style="left:380px;top:840px" data-prereqs="motor,glass,rubber,steel" data-title="automobile"><img class="pic" src="./Komerco7_files/automobile.png"></div>
+
+
+</body></html>
